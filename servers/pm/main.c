@@ -67,7 +67,6 @@ PUBLIC int main()
   /* This is PM's main loop-  get work and do it, forever and forever. */
   while (TRUE) {
 	  int ipc_status;
-	  do_getsysinfo();
 
 	  /* Wait for the next message and extract useful information from it. */
 	  if (sef_receive_status(ANY, &m_in, &ipc_status) != OK)
